@@ -2,7 +2,7 @@
 
 <JUCERPROJECT id="zYr4qQ" name="StepSequence" projectType="guiapp" version="1.0.0"
               bundleIdentifier="com.yourcompany.StepSequence" includeBinaryInAppConfig="1"
-              jucerVersion="3.1.1">
+              jucerVersion="3.1.0">
   <MAINGROUP id="KfKLtg" name="StepSequence">
     <GROUP id="{53C2F17B-BEC1-73F4-B46B-A8DAE0E65358}" name="Source">
       <FILE id="H43mzO" name="synth.h" compile="0" resource="0" file="Source/synth.h"/>
@@ -38,6 +38,30 @@
         <MODULEPATH id="juce_audio_utils" path="../Code/juce/modules"/>
       </MODULEPATHS>
     </XCODE_MAC>
+    <VS2013 targetFolder="Builds/VisualStudio2013">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="1" optimisation="1" targetName="StepSequence"/>
+        <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="0" optimisation="2" targetName="StepSequence"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_video" path="\jim\juce\modules"/>
+        <MODULEPATH id="juce_opengl" path="\jim\juce\modules"/>
+        <MODULEPATH id="juce_gui_extra" path="\jim\juce\modules"/>
+        <MODULEPATH id="juce_gui_basics" path="\jim\juce\modules"/>
+        <MODULEPATH id="juce_graphics" path="\jim\juce\modules"/>
+        <MODULEPATH id="juce_events" path="\jim\juce\modules"/>
+        <MODULEPATH id="juce_data_structures" path="\jim\juce\modules"/>
+        <MODULEPATH id="juce_cryptography" path="\jim\juce\modules"/>
+        <MODULEPATH id="juce_core" path="\jim\juce\modules"/>
+        <MODULEPATH id="juce_audio_utils" path="\jim\juce\modules"/>
+        <MODULEPATH id="juce_audio_processors" path="\jim\juce\modules"/>
+        <MODULEPATH id="juce_audio_formats" path="\jim\juce\modules"/>
+        <MODULEPATH id="juce_audio_devices" path="\jim\juce\modules"/>
+        <MODULEPATH id="juce_audio_basics" path="\jim\juce\modules"/>
+      </MODULEPATHS>
+    </VS2013>
   </EXPORTFORMATS>
   <MODULES>
     <MODULES id="juce_audio_basics" showAllCode="1" useLocalCopy="0"/>
